@@ -38,7 +38,7 @@ def about_me():
 @app.route("/users")
 def dump_json():
     out = {"ok": True, "body": ""}
-    users = get_users():
+    users = get_users()
     body_list = []
     for user in users:
         temp_dictionary = {}
